@@ -32,6 +32,7 @@ pipeline {
 
     stage('deploy') {
       steps {
+        input(message: 'are you sure ', ok: 'yes i\'m sure')
         sh 'echo \'deploy the application\''
       }
     }
